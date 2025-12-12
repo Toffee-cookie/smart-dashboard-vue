@@ -14,6 +14,7 @@ export default defineConfig({
   // 添加构建配置
   build: {
     outDir: 'dist',
+    chunkSizeWarningLimit: 1000,
     sourcemap: false,
     rollupOptions: {
       output: {
