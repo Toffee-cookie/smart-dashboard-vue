@@ -17,13 +17,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     sourcemap: false,
     rollupOptions: {
-      output: {
-        manualChunks: {
-          echarts: ['echarts'],
-          'element-plus': ['element-plus'],
-          vendor: ['vue', 'vue-router', 'pinia']
-        }
-      }
+      output: {}
     }
   },
   server: {
