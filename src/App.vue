@@ -1,20 +1,31 @@
 <template>
-  <div id="app">
-    <h1>🎉 Vercel部署测试成功！</h1>
-    <p>智能数据看板与分析平台</p>
-    <p>部署时间: {{ new Date().toLocaleString() }}</p>
-  </div>
+  <!-- 使用我们刚刚创建的布局组件 -->
+  <BasicLayout />
 </template>
 
 <script setup lang="ts">
-// 空的script，只是确保是Vue 3 setup语法
+// 导入布局组件
+import BasicLayout from '@/components/layout/BasicLayout.vue'
 </script>
 
 <style>
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
 }
 </style>
